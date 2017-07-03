@@ -1,7 +1,7 @@
 # CUDA Prefix Sum
 This repository provides a CUDA prefix sum implementation for arbitrary **even** size array.
 
-##Usage
+## Usage
 Include cuda_prefix_sum function in your code	
 
     void cuda_prefix_sum(int *input_array,int *output_array,int count)
@@ -15,16 +15,16 @@ Make sure to update the following constants based on your GPU
  - MAX_THREADS_PER_BLOCK
  - MAX_NUM_GPU_BLOCKS
 
-##Description
+## Description
 cuda_prefix_sum function can take any arbitrary **even** size array. If you have odd array just add one dummy element to the end.
 
 The function passes tests with arrays of size up to 1024*1024*128. Bigger arrays were tested but started to get out of memory error. So as long as you have enough memory the function works fine.
 
-##Testing
+## Testing
 To test the code, simply make the executable using the makefile. Then run ./main.o command.
 The code includes eight tests
 
-##Contribution
+## Contribution
 
 One thing I wish to change in this code is the first loop
 
